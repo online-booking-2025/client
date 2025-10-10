@@ -1,7 +1,6 @@
 name: Lint
 on:
   push:
-    branches: ['**']
     branches-ignore: [main]
 
 jobs:
