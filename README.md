@@ -76,13 +76,13 @@ Update npm.
    npm run dev
 ```
 
-## Build docker image
+### Build docker image
 
-docker build -t online-booking .
+npm run docker:build
 
-## Run docker image
+### Run docker image
 
-docker run -p 3000:3000 online-booking
+npm run docker:run
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

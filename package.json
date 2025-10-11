@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "start": "vite preview",
+    "docker:build": "docker build -t online-booking .",
+    "docker:run": "docker run -p 3000:3000 online-booking",
     "lint": "eslint . --max-warnings=0 --no-warn-ignored",
     "lint:fix": "eslint . --fix",
-    "start": "vite preview",
     "prepare": "husky"
   },
   "dependencies": {
