@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 type Props = {
   className?: string;
@@ -9,7 +9,7 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ className }) => {
   return (
-    <div className={cn("", className)}>
+    <div className={cn('', className)}>
       Header
     </div>
   );

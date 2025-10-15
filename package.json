@@ -1,14 +1,14 @@
 {
-  "name": "online-booking-webclient",
+  "name": "mapiqo-web-client",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "start": "vite preview",
-    "docker:build": "docker build -t online-booking .",
-    "docker:run": "docker run -p 3000:3000 online-booking",
+    "prod": "vite preview",
+    "docker:build": "docker build -t mapiqo-frontend .",
+    "docker:run": "docker run -p 3000:3000 mapiqo-frontend",
     "lint": "eslint . --max-warnings=0 --no-warn-ignored",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"

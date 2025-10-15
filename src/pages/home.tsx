@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 type Props = {
   className?: string;
@@ -9,11 +9,12 @@ type Props = {
 
 export const Home: React.FC<Props> = ({ className }) => {
   return (
-    <div className={cn("", className)}>
-      <h1>Home Page - Online Booking 2025</h1>
+    <div className={cn('', className)}>
+      <h1>Home Page - mapiqo</h1>
       <Button
+        variant="secondary"
         onClick={() => {
-          throw new Error("This is your first error!");
+          throw new Error('This is your first error!');
         }}
       >
         Break the world

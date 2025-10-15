@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 
-import { Home } from "@/pages";
+import { Home } from '@/pages';
 
 function App() {
   return (

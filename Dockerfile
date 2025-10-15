@@ -1,4 +1,4 @@
-FROM node:20-alpine AS builder
+FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm i
@@ -6,4 +6,4 @@ COPY . .
 RUN npm run build
 RUN apk add --no-cache curl
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["npm", "run", "prod"]

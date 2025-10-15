@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 
 <div align="center">
-  <h3 align="center">Online Booking Client</h3>
+  <h3 align="center">Mapiqo Client</h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -76,21 +76,13 @@ Update npm.
    npm run dev
 ```
 
-### Build docker image
-
-npm run docker:build
-
-### Run docker image
-
-npm run docker:run
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the Unlicense License. See `LICENSE` for more information.
+See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
