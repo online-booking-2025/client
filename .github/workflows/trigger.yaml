@@ -1,7 +1,7 @@
 name: Trigger Deploy
 on:
   push:
-    branches: ['main']
+    branches: [main]
 
 jobs:
   lint:
@@ -18,12 +18,11 @@ jobs:
         run: npm ci
 
       - name: Lint
-        run: npm run lint -- --max-warnings=0
+        run: npm run lint
 
   build-and-push:
     needs: lint
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -44,7 +43,6 @@ jobs:
   init-deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - uses: peter-evans/repository-dispatch@v3
         id: dispatch

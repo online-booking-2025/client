@@ -1,16 +1,18 @@
 import React from 'react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
 
-interface Props {
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+
+type Props = {
   className?: string;
-}
+};
 
 export const Home: React.FC<Props> = ({ className }) => {
   return (
     <div className={cn('', className)}>
-      <h1>Home Page - Online Booking 2025</h1>
+      <h1>Home Page - mapiqo</h1>
       <Button
+        variant="secondary"
         onClick={() => {
           throw new Error('This is your first error!');
         }}
