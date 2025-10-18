@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { footerData } from '@/constants/footer-data';
 import { cn } from '@/lib/utils';
 
 type Props = {
@@ -10,7 +11,7 @@ type Props = {
 export const Footer: React.FC<Props> = ({ className }) => {
   return (
     <div className={cn('', className)}>
-      Footer
+      {footerData.title}
     </div>
   );
 };

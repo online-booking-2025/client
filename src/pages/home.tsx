@@ -1,24 +1,9 @@
-import React from 'react';
+import { homeData } from '@/constants/home-data';
 
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-
-type Props = {
-  className?: string;
-};
-
-export const Home: React.FC<Props> = ({ className }) => {
+export default function Home() {
   return (
-    <div className={cn('', className)}>
-      <h1>Home Page - mapiqo</h1>
-      <Button
-        variant="secondary"
-        onClick={() => {
-          throw new Error('This is your first error!');
-        }}
-      >
-        Break the world
-      </Button>
-    </div>
+    <section className="">
+      <h1>{homeData.title}</h1>
+    </section>
   );
-};
+}

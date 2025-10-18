@@ -54,6 +54,6 @@
     "vite": "^7.1.7"
   },
   "lint-staged": {
-    "*": "npm run lint"
+    "*": "npm run lint:fix"
   }
 }
