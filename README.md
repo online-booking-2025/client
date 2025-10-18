@@ -21,8 +21,6 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#run-server">Run Server</a></li>
-        <li><a href="#build-docker-image">Build docker image</a></li>
-        <li><a href="#run-docker-image">Run docker image</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
